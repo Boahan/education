@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    box-sizing: border-box;
+    transition: 0.4s all;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.home {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("assets/banner.png");
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+}
+
+.navbar li {
+    display: inline;
+    float: right;
+}
+
+.navbar li a {
+    position: relative;
+    display: block;
+    padding: 16px 30px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    transition: 0.3s all;
+}
+
+.navbar li a:hover {
+    color: red;
+}
+
+.navbar li a:hover::after {
+    width: 100%;
+}
+
+.logo {
+    font-weight: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content h1 {
+    font-size: 70px;
+    color: #fff;
+}
+
+.content h2 {
+    color: #fff;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+.btn {
+    position: relative;
+    /* width: 250px;
+    height: 55px; */
+    border: 2px solid #fff;
+    padding: 13px 32px;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    margin-top: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.courses {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+p.lead {
+    color: red;
+    text-align: center;
+}
+
+.card-deck {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.card {
+    width: 400px;
+    padding: 35px 30px;
+    background-color: rgba(250, 128, 114, 0.25);
+    color: #000;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 0 12px #999;
+}
+
+p {
+    margin-top: 15px;
+}
+
+.global-img {
+    position: relative;
+    width: 300px;
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.global-img:hover {
+    transform: scale(1.08);
+}
+
+
+.enroll {
+    margin: 100px auto;
+    padding: 100px 20px;
+    width: 90%;
+    display: block;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("assets/banner2.jpg");
+    border-radius: 15px;
+}
+
+.enroll h1 {
+    color: #fff;
+}
+
+.contact-form {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.contact-form input, textarea {
+    display: block;
+    width: 100%;
+    margin: 40px 20px;
+    padding: 10px;
+    border: 2px solid red;
+    color: red;
+    outline: none;
+    color: red;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 150px;
+    transition: 0s;
+    resize: vertical;
+}
+
+.submit {
+    width: 200px;
+    display: block;
+    margin: 30px auto;
+    padding: 10px;
+    border: 2px solid red;
+    color: red;
+    outline: none;
+    color: red;
+    font-size: 16px;
+    background-color: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: red;
+    color: #fff;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: red;
+    color: #fff;
+    padding: 15px;
+    margin-top: 100px;
+}
+
+table {
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
